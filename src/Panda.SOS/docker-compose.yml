@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  panda.sos:
+    image: ${DOCKER_REGISTRY-}pandasos
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=tcc
+      - POSTGRES_PASSWORD=tcc1234!@
+      - POSTGRES_DB=mobile
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data.sql:/docker-entrypoint-initdb.d/init.sql
