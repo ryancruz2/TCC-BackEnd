@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.SOS", "Panda.SOS.csproj", "{8E320C4F-5052-4A15-A3F7-C8057FD97C23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.SOS.Domain", "Panda.SOS.Domain\Panda.SOS.Domain.csproj", "{AE0D1E6A-91C5-41E5-B4A9-2E4D266B9D32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.SOS.Domain", "..\Panda.SOS.Domain\Panda.SOS.Domain.csproj", "{AE0D1E6A-91C5-41E5-B4A9-2E4D266B9D32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.SOS.Infra", "Panda.SOS.Infra\Panda.SOS.Infra.csproj", "{055AB1EE-D430-4467-9A84-2E5EE959BBDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.SOS.Infra", "..\Panda.SOS.Infra\Panda.SOS.Infra.csproj", "{055AB1EE-D430-4467-9A84-2E5EE959BBDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.SOS", "Panda.SOS\Panda.SOS.csproj", "{7D821435-538A-49D1-B531-3BC88A3EC91B}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{87CE70EA-6AB1-4CB1-8050-4DC2040CBE8E}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{43A10519-58C7-4486-8B61-3D81E9BA64B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8E320C4F-5052-4A15-A3F7-C8057FD97C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E320C4F-5052-4A15-A3F7-C8057FD97C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E320C4F-5052-4A15-A3F7-C8057FD97C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E320C4F-5052-4A15-A3F7-C8057FD97C23}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE0D1E6A-91C5-41E5-B4A9-2E4D266B9D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE0D1E6A-91C5-41E5-B4A9-2E4D266B9D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE0D1E6A-91C5-41E5-B4A9-2E4D266B9D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,10 +25,14 @@ Global
 		{055AB1EE-D430-4467-9A84-2E5EE959BBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{055AB1EE-D430-4467-9A84-2E5EE959BBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{055AB1EE-D430-4467-9A84-2E5EE959BBDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87CE70EA-6AB1-4CB1-8050-4DC2040CBE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87CE70EA-6AB1-4CB1-8050-4DC2040CBE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87CE70EA-6AB1-4CB1-8050-4DC2040CBE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87CE70EA-6AB1-4CB1-8050-4DC2040CBE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D821435-538A-49D1-B531-3BC88A3EC91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D821435-538A-49D1-B531-3BC88A3EC91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D821435-538A-49D1-B531-3BC88A3EC91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D821435-538A-49D1-B531-3BC88A3EC91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A10519-58C7-4486-8B61-3D81E9BA64B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A10519-58C7-4486-8B61-3D81E9BA64B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A10519-58C7-4486-8B61-3D81E9BA64B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A10519-58C7-4486-8B61-3D81E9BA64B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
