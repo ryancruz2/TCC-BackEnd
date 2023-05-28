@@ -3,7 +3,7 @@ public record PhoneMap : IEntityTypeConfiguration<Phones>
 {
     public void Configure(EntityTypeBuilder<Phones> builder)
     {
-        builder.ToTable("Phones").HasKey(p => new { p.Id, p.Name, p.Brands });
+        builder.ToTable("Phones").HasKey(p => new { p.Id });
         builder.Property(x => x.Id).HasColumnType("integer");
         builder.Property(x => x.Name).HasColumnType("varchar").HasMaxLength(100);
         builder.Property(x => x.Brands).HasColumnType("varchar").HasMaxLength(100);
