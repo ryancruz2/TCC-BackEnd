@@ -1,5 +1,3 @@
-using Panda.SOS.Configuration;
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.ConfigureModule();
 var config = builder.Configuration;
@@ -13,7 +11,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.ConfigureMigration();
 app.ConfigureMigration();
 // Configure the HTTP request pipeline.
 
