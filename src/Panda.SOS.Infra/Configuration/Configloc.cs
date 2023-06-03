@@ -1,6 +1,6 @@
 ﻿
 
-namespace Panda.SOS.Infra.Config;
+namespace Panda.SOS.Infra.Configuration;
 public class Configloc
 {
     public static void Load(ContainerBuilder builder)

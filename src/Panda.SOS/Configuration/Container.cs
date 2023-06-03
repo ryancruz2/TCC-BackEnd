@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Panda.SOS.Infra.Config;
+using Panda.SOS.Infra.Configuration;
 
 namespace Panda.SOS.Configuration;
 

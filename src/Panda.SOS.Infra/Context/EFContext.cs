@@ -1,4 +1,6 @@
-﻿namespace Panda.SOS.Infra.Context;
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Panda.SOS.Infra.Context;
 
 public class EFContext : DbContext
 {

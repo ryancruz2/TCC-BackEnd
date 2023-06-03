@@ -12,8 +12,8 @@ using Panda.SOS.Infra.Context;
 namespace Panda.SOS.Infra.Migrations
 {
     [DbContext(typeof(EFContext))]
-    [Migration("20230528010256_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230529012813_rename_brands")]
+    partial class rename_brands
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -77,22 +77,17 @@ namespace Panda.SOS.Infra.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Brands")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar")
-                        .HasColumnName("brands");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("description");
-
                     b.Property<string>("Image")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar")
                         .HasColumnName("image");
+
+                    b.Property<string>("Maker")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar")
+                        .HasColumnName("maker");
 
                     b.Property<string>("Name")
                         .IsRequired()
