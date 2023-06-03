@@ -1,5 +1,4 @@
 using Microsoft.ApplicationInsights.Extensibility;
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.ConfigureModule();
 
@@ -19,7 +18,6 @@ var con = config.GetConnectionString("Postgres")!;
 builder.Services.ConfigureDatabase(con);
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 
 app.UseSwagger();
