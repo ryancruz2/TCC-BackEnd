@@ -3,18 +3,38 @@ version: '3.4'
 services:
   panda.sos:
     image: ${DOCKER_REGISTRY-}pandasos
+    depends_on: 
+        - "postgres"
+    networks:
+      - panda_sos_network
+    ports:
+      - "5000:5000"
+      - "5001:5001"
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Panda.SOS/Dockerfile
 
-  db:
+  postgres:
+    networks:
+      - panda_sos_network
+    container_name: 'postgres-db'
+    command: postgres -c 'max_connections=500'
+
     image: postgres:latest
+    ports:
+      - "5432:5432"
     restart: always
+    volumes:
+      - ./data.sql:/docker-entrypoint-initdb.d/init.sql
+
     environment:
       - POSTGRES_USER=tcc
       - POSTGRES_PASSWORD=tcc1234!@
       - POSTGRES_DB=mobile
-    ports:
-      - "5432:5432"
-    volumes:
-      - ./data.sql:/docker-entrypoint-initdb.d/init.sql
+    
+
+volumes:
+  data.sql:
+networks:
+  panda_sos_network:
+    driver: bridge

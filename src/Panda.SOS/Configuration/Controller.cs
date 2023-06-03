@@ -3,6 +3,7 @@ public static class Controller
 {
     public static IServiceCollection ConfigureController(this IServiceCollection services, string connectionString)
     {
-        return services;
+      services.AddControllers();
+       return services;
     }
 }
