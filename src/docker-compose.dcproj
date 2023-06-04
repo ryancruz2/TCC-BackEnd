@@ -3,9 +3,9 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>85593091-b2d3-4bbb-999c-13d7187b89e7</ProjectGuid>
+    <ProjectGuid>2a2a94cf-14fd-4c93-be72-fe6b5174884a</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/panda.sos</DockerServiceUrl>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>panda.sos</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>

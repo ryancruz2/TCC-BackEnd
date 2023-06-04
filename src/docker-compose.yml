@@ -5,14 +5,14 @@ services:
     image: ${DOCKER_REGISTRY-}pandasos
     depends_on: 
         - "postgres"
-    networks:
-      - panda_sos_network
     ports:
       - "5000:5000"
       - "5001:5001"
+    networks:
+      - panda_sos_network
     build:
       context: .
-      dockerfile: Panda.SOS/Dockerfile
+      dockerfile: ./Panda.SOS/Dockerfile
 
   postgres:
     networks:
@@ -22,12 +22,11 @@ services:
 
     image: postgres:latest
     ports:
-      - "5432:5432"
+        - "5431:5432"
     restart: always
     volumes:
-      - ../volumes/postgres_data:/var/lib/postgresql/data
-      - ../volumes/postgres_data_backups:/backups
-
+        - ../volumes/postgres_data:/var/lib/postgresql/data
+        - ../volumes/postgres_data_backups:/backups
     environment:
       - POSTGRES_USER=tcc
       - POSTGRES_PASSWORD=tcc1234!
