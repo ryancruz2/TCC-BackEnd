@@ -24,7 +24,7 @@ public class SearchProvider<TIndex> : ISearchProvider<TIndex>
 
             };
 
-            SearchResults<TIndex>? response = await _searchService.SearchAsync<TIndex>($"{search}~1", options);
+            SearchResults<TIndex>? response = await _searchService.SearchAsync<TIndex>($"{search}~2", options);
             var result = response.GetResults().ToList().Select(doc => doc.Document);
             return result;
         }
