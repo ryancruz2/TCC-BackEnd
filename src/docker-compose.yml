@@ -30,7 +30,7 @@ services:
 
     environment:
       - POSTGRES_USER=tcc
-      - POSTGRES_PASSWORD=tcc1234!@
+      - POSTGRES_PASSWORD=tcc1234!
       - POSTGRES_DB=mobile
     
 

@@ -3,7 +3,7 @@
     "Panda.SOS": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "panda.sos",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

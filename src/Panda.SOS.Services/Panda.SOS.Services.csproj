@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Panda.SOS.Domain\Panda.SOS.Domain.csproj" />
+    <ProjectReference Include="..\Panda.SOS.Domain\Panda.SOS.Domain.csproj" />
   </ItemGroup>
 
 </Project>

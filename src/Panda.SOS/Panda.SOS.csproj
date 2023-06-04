@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Panda.SOS.Services\Panda.SOS.Services.csproj" />
+    <ProjectReference Include="..\Panda.SOS.Services\Panda.SOS.Services.csproj" />
     <ProjectReference Include="..\Panda.SOS.Infra\Panda.SOS.Infra.csproj" />
   </ItemGroup>
 
