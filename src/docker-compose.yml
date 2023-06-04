@@ -25,7 +25,8 @@ services:
       - "5432:5432"
     restart: always
     volumes:
-      - ./data.sql:/docker-entrypoint-initdb.d/init.sql
+      - ../volumes/postgres_data:/var/lib/postgresql/data
+      - ../volumes/postgres_data_backups:/backups
 
     environment:
       - POSTGRES_USER=tcc
@@ -33,8 +34,6 @@ services:
       - POSTGRES_DB=mobile
     
 
-volumes:
-  data.sql:
 networks:
   panda_sos_network:
     driver: bridge
