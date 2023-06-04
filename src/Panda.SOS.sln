@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.SOS", "Panda.SOS\Pand
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{85593091-B2D3-4BBB-999C-13D7187B89E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.SOS.Services", "..\Panda.SOS.Services\Panda.SOS.Services.csproj", "{6666786E-1452-4F03-848D-A5D2F9096940}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panda.SOS.Services", "Panda.SOS.Services\Panda.SOS.Services.csproj", "{6666786E-1452-4F03-848D-A5D2F9096940}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
