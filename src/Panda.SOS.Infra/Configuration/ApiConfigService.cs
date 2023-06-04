@@ -1,4 +1,4 @@
-﻿namespace Panda.SOS.Infra.Config;
+﻿namespace Panda.SOS.Infra.Configuration;
 public class ApiConfigService
 {
     public readonly int Version;

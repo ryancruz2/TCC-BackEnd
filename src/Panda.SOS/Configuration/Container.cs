@@ -1,8 +1,4 @@
-﻿using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using Panda.SOS.Infra.Config;
-
-namespace Panda.SOS.Configuration;
+﻿namespace Panda.SOS.Configuration;
 
 public static class Container
 {

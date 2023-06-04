@@ -2,6 +2,7 @@
 using System.Text.Json.Nodes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Panda.SOS.Infra.Context;
@@ -11,9 +12,11 @@ using Panda.SOS.Infra.Context;
 namespace Panda.SOS.Infra.Migrations
 {
     [DbContext(typeof(EFContext))]
-    partial class EFContextModelSnapshot : ModelSnapshot
+    [Migration("20230528125640_teste")]
+    partial class teste
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,17 +77,22 @@ namespace Panda.SOS.Infra.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Brands")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar")
+                        .HasColumnName("brands");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("description");
+
                     b.Property<string>("Image")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar")
                         .HasColumnName("image");
-
-                    b.Property<string>("Maker")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar")
-                        .HasColumnName("maker");
 
                     b.Property<string>("Name")
                         .IsRequired()
