@@ -13,5 +13,5 @@ public class PhonesController : ControllerBase
     }
 
     [HttpGet("Search")]
-    public async Task<IActionResult> Get([FromQuery] string search) => Ok(await _search.SearchAsync(search));
+    public async Task<IActionResult> Get([FromQuery] string? search) => Ok(await _search.SearchAsync(search));
 }
