@@ -1,5 +1,3 @@
-﻿
-
 namespace Panda.SOS.Services.Search;
 public class SearchProvider<TIndex> : ISearchProvider<TIndex>
     where TIndex : class
