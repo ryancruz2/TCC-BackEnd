@@ -20,7 +20,7 @@ public class SearchProvider<TIndex> : ISearchProvider<TIndex>
             var options = new SearchOptions()
             {
                 QueryType = SearchQueryType.Full,
-                Size = 5,
+                Size = string.IsNullOrEmpty(search)? 10 : 5,
 
             };
 
